@@ -20,7 +20,7 @@
           <div id="J_chartBarBox" class="chart-box"></div>
         </el-card>
       </el-col>
-      <el-col :span="12">
+      <!-- <el-col :span="12">
         <el-card>
           <div id="J_chartPieBox" class="chart-box"></div>
         </el-card>
@@ -29,7 +29,7 @@
         <el-card>
           <div id="J_chartScatterBox" class="chart-box"></div>
         </el-card>
-      </el-col>
+      </el-col> -->
     </el-row>
   </div>
 </template>
@@ -48,8 +48,8 @@
     mounted () {
       this.initChartLine()
       this.initChartBar()
-      this.initChartPie()
-      this.initChartScatter()
+      // this.initChartPie()
+      // this.initChartScatter()
     },
     activated () {
       // 由于给echart添加了resize事件, 在组件激活时需要重新resize绘画一次, 否则出现空白bug

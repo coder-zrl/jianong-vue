@@ -12,17 +12,17 @@
     <el-row>
       <el-col :span="24">
         <el-card>
-          <div id="J_chartBarBox" class="chart-box"></div>
+          <div id="J_chartBarBox1" class="chart-box"></div>
         </el-card>
       </el-col>
       <el-col :span="12">
         <el-card>
-          <div id="J_chartPieBox" class="chart-box"></div>
+          <div id="J_chartPieBox2" class="chart-box"></div>
         </el-card>
       </el-col>
       <el-col :span="12">
         <el-card>
-          <div id="J_chartScatterBox" class="chart-box"></div>
+          <div id="J_chartScatterBox3" class="chart-box"></div>
         </el-card>
       </el-col>
     </el-row>
@@ -156,7 +156,7 @@
             }
           ]
         }
-        this.chartBar = echarts.init(document.getElementById('J_chartBarBox'))
+        this.chartBar = echarts.init(document.getElementById('J_chartBarBox1'))
         this.chartBar.setOption(option)
         window.addEventListener('resize', () => {
           this.chartBar.resize()
@@ -232,7 +232,7 @@
             }
           ]
         }
-        this.chartPie = echarts.init(document.getElementById('J_chartPieBox'))
+        this.chartPie = echarts.init(document.getElementById('J_chartPieBox2'))
         this.chartPie.setOption(option)
         window.addEventListener('resize', () => {
           this.chartPie.resize()
@@ -302,7 +302,7 @@
             }
           ]
         }
-        this.chartPie = echarts.init(document.getElementById('J_chartScatterBox'))
+        this.chartPie = echarts.init(document.getElementById('J_chartScatterBox3'))
         this.chartPie.setOption(option)
         window.addEventListener('resize', () => {
           this.chartPie.resize()
